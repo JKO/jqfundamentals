@@ -40,6 +40,7 @@ if [ ! -f xalan.zip ]; then
 	$GET xalan.zip http://mirrors.ibiblio.org/pub/mirrors/apache/xml/xalan-j/xalan-j_2_7_1-bin-2jars.zip
 	unzip xalan.zip -d xalan
 fi
+rm -rf xalan.zip
 
 # FOP Install
 if [ ! -f fop.zip ]; then
@@ -47,6 +48,8 @@ if [ ! -f fop.zip ]; then
 	$GET fop.zip http://mirrors.ibiblio.org/pub/mirrors/apache/xmlgraphics/fop/binaries/fop-1.0-bin.zip
 	unzip fop.zip -d fop
 fi
+
+rm -rf fop.zip
 
 # DocBook NS XSL Stylesheets
 if [ ! -f docbook-xsl.zip ]; then
@@ -61,6 +64,7 @@ if [ ! -f xslthl.zip ]; then
 	$GET xslthl.zip http://sourceforge.net/projects/xslthl/files/xslthl/2.0.2/xslthl-2.0.2.zip/download
 	unzip xslthl.zip -d xslthl
 fi
+rm -rf xslthl.zip
 
 echo
 echo
